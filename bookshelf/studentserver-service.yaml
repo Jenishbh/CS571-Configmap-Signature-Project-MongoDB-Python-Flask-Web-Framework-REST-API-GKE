@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  type: LoadBalancer
+  ports:
+    # service port in cluster
+    - port: 8080
+      # port to contact inside container
+      targetPort: 8080
+  selector:
+    app: web

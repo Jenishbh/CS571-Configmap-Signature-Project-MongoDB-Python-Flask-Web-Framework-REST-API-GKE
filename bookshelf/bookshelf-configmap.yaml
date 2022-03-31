@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bookshelf-config
+data:
+  # SERVICE_NAME.NAMESPACE.svc.cluster.local:SERVICE_PORT
+  MONGO_URL: 34.127.1.197
+  MONGO_DATABASE: mydb
